@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "my-nextron-app",
+  "description": "My application description",
+  "version": "1.0.0",
+  "author": "Michael Yugcha <mgyugcha@gmail.com>",
+  "homepage": "https://mgyugcha.gitlab.io",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@mgyugcha/carver-suite-api": "^1.0.1",
+    "autoprefixer": "^10.4.14",
+    "axios": "^1.4.0",
+    "bayes-server": "^8.1.0",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "@ant-design/icons": "^5.1.4",
+    "@types/node": "^20.3.3",
+    "@types/react": "^18.2.14",
+    "antd": "^5.6.3",
+    "electron": "^21.3.3",
+    "electron-builder": "^23.6.0",
+    "eslint": "^8.44.0",
+    "eslint-config-next": "^13.4.7",
+    "eslint-plugin-react": "^7.32.2",
+    "next": "^13.4.7",
+    "nextron": "^8.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
+  }
+}
