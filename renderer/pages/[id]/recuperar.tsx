@@ -1,9 +1,7 @@
-import axios from 'axios'
-// import Image from 'next/image'
 import $rules from '@/assets/$rules'
 import type { Drive } from 'drivelist'
-import { useUtils } from '@/assets/utils'
 import { NextPageWithLayout } from '../_app'
+import { useUtils, axios } from '@/assets/utils'
 import { FC, useEffect, useState } from 'react'
 import FolderInput from '@/components/FolderInput'
 import ProyectoLayout from '@/components/layouts/Proyecto'
@@ -75,14 +73,7 @@ const ModalAyuda: FC = () => {
           seguir esperando con tranquilidad que concluya.
         </Typography.Paragraph>
         <div className="text-center">
-          {/* <Image
-            src="/bad-logs.png"
-            alt="url"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: '100%', height: 'auto' }}
-          /> */}
+          <img src="/bad-logs.png" alt="imagen" className="aspect-auto" />
         </div>
       </Modal>
     </>
@@ -100,9 +91,9 @@ const Recuperar: NextPageWithLayout = () => {
 
   const init = async () => {
     try {
-      const { data: dataDrivers } = await axios.get<Drive[]>('/api/drivers')
+      const { data: dataDrivers } = await axios.get<Drive[]>('/drivers')
       setDrivers(dataDrivers.filter((item) => item.description))
-      const { data: dataCarvers } = await axios.get('/api/carvers')
+      const { data: dataCarvers } = await axios.get('/carvers')
       setCarvers(dataCarvers)
     } catch (err) {
       showError(err)

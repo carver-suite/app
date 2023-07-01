@@ -9,8 +9,6 @@ const isProd: boolean = process.env.NODE_ENV === 'production'
 
 if (isProd) {
   serve({ directory: 'app' })
-} else {
-  app.setPath('userData', `${app.getPath('userData')} (development)`)
 }
 
 ;(async () => {

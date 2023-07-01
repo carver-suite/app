@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "my-nextron-app",
-  "description": "My application description",
+  "name": "carver-suite",
+  "description": "Suite de carvers de recuperación de información",
   "version": "1.0.0",
   "author": "Michael Yugcha <mgyugcha@gmail.com>",
   "homepage": "https://mgyugcha.gitlab.io",
@@ -25,6 +25,8 @@
     "@ant-design/icons": "^5.1.4",
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
     "antd": "^5.6.3",
     "electron": "^21.3.3",
     "electron-builder": "^23.6.0",
